@@ -1,0 +1,11 @@
+View(iris)
+View(diamonds)
+ncol(diamonds)
+nrow(diamonds)
+?diamonds
+head(diamonds)
+ggplot(data = diamonds, aes(x=price)) + geom_histogram(fill="blue")
+ggplot(data = diamonds, aes(x=cut,fill=cut)) + geom_bar()
+ggplot(data = diamonds, aes(y=price, x=carat, col=cut)) + geom_point()
+ggplot(data = diamonds, aes(x=clarity, y=carat, fill=clarity)) + geom_boxplot()
+ggplot(data = diamonds, aes(x=clarity, y=carat, fill=cut)) + geom_boxplot() + facet_grid(~cut) + theme(plot.background = element_rect(fill="palegreen"))
